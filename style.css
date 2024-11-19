@@ -1,0 +1,77 @@
+/*Abaixo estilizamos o nosso logotipo por meio do id, sempre quando estilizamos um elemento pelo id, precisamos colocar a # antes do nome*/
+#logo{
+    border-radius: 50%;
+    /*Transforma os cantos da imagem em cantos curvos, arredondando a imagem*/
+    
+    width: 5%;
+    /*Modifica a largura da imagem*/
+    height: 5%;
+    /*Modifica a altura da imagem*/
+    
+}
+/*Abaixo estamos modificando todos os elementos do body que é o corpo da nossa página, sempre que queremos estilizar elementos pelo seu nome, colocamos apenas o nome do elemento seguido das chaves { } */
+body{
+    /*Estiliza o fundo da nossa página aplicando a cor*/
+    background-color:hsl(217, 56%, 76%);
+    /*Modifica a fonte da letra do meu documento*/
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*Abaixo estilizamos dois elementos do html ao mesmo tempo, usamos esta técnica quando ambos possuem as mesmas características para modificação, sempre devemos lembrar de separar os elementos por vírgula (,)*/
+img, video{
+    width: 50%;
+    height: 30%;
+}
+hr{
+    border: 1px solid;/*Define a largura e tipo de borda*/
+    border-color: rgb(61, 62, 139);/*Define a cor da borda(linha)*/
+    width: 100%;
+}
+/*Abaixo estamos estilizando o ícone por meio da classe do comando usando o ponto (.) antes do nome*/
+.icone{
+    border-radius: 0;/* Arredondar as bordas do meu elemento*/
+    width: 10%;
+    height: 10%;
+}
+/*modificação aula 24/10*/
+/*Estilizando o elemento pelo nome do comando*/
+section{
+    background-color: hsl(217, 61%, 83%);
+    border: 1px solid;
+    border-color: rgb(61, 62, 139);
+    margin: 5%;/*Define o espaço entre o limite da página web e os elementos contidos nela*/
+    padding: 2%;/*Define o espaço entre o conteúdo do site e o elemento em que ele está contido*/
+}
+/*modificação aula 24/10*/
+.ladoalado{
+    display: flex;/*Usa um layout flezível para alinhar os elementos*/
+    align-items: center;/*Alinhamento vertical dos itens*/
+    justify-content: center;/*Alinhamento horizontal dos itens*/
+    gap: 1rem;/*Espaço entre os elementos*/
+}
+.ladoalado2{
+    width:100%;
+    background-color: hsla(217, 61%, 83%, 0.705);
+    position: fixed;
+    display: flex;/*Usa um layout flexível para alinhar os elementos*/
+    z-index: 1;
+    align-items: center;/*Alinhamento vertical dos itens*/
+    gap: 1rem;/*Espaço entre os elementos*/
+}
+/*Modificações da aula 29/10*/
+.menu-item{
+    
+    text-decoration: none;/*Retira o traço abaixo do link*/
+    color:darkblue;
+    font-weight: bold; /* Define o texto como negrito */
+    font-size: 18px;/*Altera o tamanho da letra*/
+    height: 30px;
+    align-items: center;
+    border-radius: 10%;
+    gap: 10px;
+}
+.menu-item:hover{
+    font-weight: 100;
+    font-size: 18px;
+    color: black;
+    background-color: hsl(217, 61%, 83%);
+}
